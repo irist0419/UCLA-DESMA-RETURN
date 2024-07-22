@@ -1,0 +1,373 @@
+fileFormatVersion: 2
+guid: e8085550f9dff8c428add2c9be0d1f71
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 3f0aa0fa20e8e4a4dba2bf11f866bd49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bandage
+    second: {fileID: 2100000, guid: 2d4ae67ff5063924f993a2abb5237d47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bandage.001
+    second: {fileID: 2100000, guid: e31d1022b7748bd4fbee331778c8d2ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bandage.002
+    second: {fileID: 2100000, guid: cfceefb2bae0017448be6577f0f89020, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bandage.003
+    second: {fileID: 2100000, guid: a8733e935122b5541a470f1fa74d6e8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black
+    second: {fileID: 2100000, guid: f28a263c0d5b66749a5f7bb126544a8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: broken glass
+    second: {fileID: 2100000, guid: 3645b919e72a02e47874428e1d8c949e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emit
+    second: {fileID: 2100000, guid: e16507e04e127ea4a9bba1642120a42d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emit.001
+    second: {fileID: 2100000, guid: 35a4ac2ecd3b09c4cadbdb9265e83062, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emit.002
+    second: {fileID: 2100000, guid: d7fad76956ab6b74498abad5adbd60de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: finger
+    second: {fileID: 2100000, guid: 56e0430a04990dc41935d8d6c48b9b9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glossy
+    second: {fileID: 2100000, guid: 2a1c678dafa9d684faa9f16d2e5b9a3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gray
+    second: {fileID: 2100000, guid: e87998659db20004db329b73be69bd88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gray.001
+    second: {fileID: 2100000, guid: 2dc491858a554584ca4b7bebbe355514, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leg metal
+    second: {fileID: 2100000, guid: 071006028f2ceaa4c9daf89fadae07d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: orange
+    second: {fileID: 2100000, guid: a42d67a35f891f04ba9923b2755aed06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: orangewrist
+    second: {fileID: 2100000, guid: e01d64ee58fa5064d91d4a84423ea694, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pipe1
+    second: {fileID: 2100000, guid: c65108fee0cbefe468b6e7620927a677, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pipe1.001
+    second: {fileID: 2100000, guid: d5f07fe30ce8f414eb38f5d4ef346e7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wire
+    second: {fileID: 2100000, guid: 8f20e339e6104eb49b913960753cb775, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftUpperLeg' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Circle
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: robot(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Area
+      parentName: robot(Clone)
+      position: {x: -1.860478e-17, y: 5.111056, z: -1.5858566}
+      rotation: {x: 0.4296831, y: -5.2546483e-17, z: -5.2546476e-17, w: 0.90297973}
+      scale: {x: 138.99446, y: 138.99446, z: 138.99446}
+    - name: Area.001
+      parentName: robot(Clone)
+      position: {x: 2.9260356, y: 2.3196073, z: -0.04055998}
+      rotation: {x: 0.49999997, y: -0.5, z: -0.50000006, w: 0.49999997}
+      scale: {x: 420.80722, y: 261.02774, z: 191.86005}
+    - name: Area.002
+      parentName: robot(Clone)
+      position: {x: 0.018990576, y: 3.412307, z: 2.43213}
+      rotation: {x: 0.9999497, y: 1.0990271e-16, z: 1.09902723e-16, w: 0.010034055}
+      scale: {x: 271.27426, y: 271.2743, z: 271.2743}
+    - name: BezierCircle
+      parentName: robot(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Camera
+      parentName: robot(Clone)
+      position: {x: -13.286845, y: 2.2034793, z: -0.052573755}
+      rotation: {x: -0.000000015454312, y: 0.7071068, z: 0.000000015454308, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Circle
+      parentName: robot(Clone)
+      position: {x: -0.13029225, y: 2.549688, z: 0}
+      rotation: {x: 0.50000006, y: 0.50000006, z: -0.49999997, w: -0.49999994}
+      scale: {x: 13.120559, y: 13.120559, z: 13.120559}
+    - name: Cube
+      parentName: robot(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 6.2430143, y: 6.2430143, z: 6.2430143}
+    - name: Cube.001
+      parentName: robot(Clone)
+      position: {x: -0, y: 2.368382, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 7.847751, y: 7.847751, z: 7.847751}
+    - name: Cube.002
+      parentName: robot(Clone)
+      position: {x: -0, y: 3.352707, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 41.282906, y: 41.282906, z: 41.282906}
+    - name: Cube.003
+      parentName: robot(Clone)
+      position: {x: -0, y: 2.9665728, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 15.930515, y: 15.930515, z: 15.930515}
+    - name: Cylinder
+      parentName: robot(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.001
+      parentName: robot(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 26.898098, y: 26.898098, z: 30.747402}
+    - name: Cylinder.002
+      parentName: robot(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 25.601364, y: 25.601364, z: 25.601364}
+    - name: Cylinder.003
+      parentName: robot(Clone)
+      position: {x: -0, y: 2.549688, z: 0}
+      rotation: {x: 0.50000006, y: 0.50000006, z: -0.49999997, w: -0.49999994}
+      scale: {x: 13.534816, y: 13.534816, z: 13.534816}
+    - name: Cylinder.004
+      parentName: robot(Clone)
+      position: {x: -0, y: 2.368382, z: 0}
+      rotation: {x: 1, y: -1.1102233e-16, z: 1.110223e-16, w: 0.0000000754979}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.005
+      parentName: robot(Clone)
+      position: {x: -0, y: 2.368382, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.006
+      parentName: robot(Clone)
+      position: {x: -0, y: 4.147898, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 18.640156, y: 18.640156, z: 18.640156}
+    - name: Cylinder.007
+      parentName: robot(Clone)
+      position: {x: -0, y: 4.1699805, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 10.229223, y: 12.452913, z: 12.452913}
+    - name: Cylinder.008
+      parentName: robot(Clone)
+      position: {x: -0, y: 4.147898, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 13.5931015, y: 13.5931015, z: 13.5931015}
+    - name: Cylinder.009
+      parentName: robot(Clone)
+      position: {x: -0, y: 2.549688, z: 0}
+      rotation: {x: 0.50000006, y: 0.50000006, z: -0.49999997, w: -0.49999994}
+      scale: {x: 13.534816, y: 13.534816, z: 13.534816}
+    - name: Cylinder.010
+      parentName: robot(Clone)
+      position: {x: -0, y: 3.352707, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 8.803493, y: 8.803493, z: 8.803493}
+    - name: Cylinder.011
+      parentName: robot(Clone)
+      position: {x: -0.19987245, y: 3.4666529, z: 0}
+      rotation: {x: 0.50000006, y: 0.50000006, z: -0.49999997, w: -0.49999994}
+      scale: {x: 8.87691, y: 8.87691, z: 8.87691}
+    - name: Cylinder.013
+      parentName: robot(Clone)
+      position: {x: -0, y: 2.368382, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 12.704611, y: 12.704611, z: 12.704611}
+    - name: Cylinder.014
+      parentName: robot(Clone)
+      position: {x: -0, y: 4.147898, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 8.619767, y: 8.619767, z: 8.619767}
+    - name: Cylinder.015
+      parentName: robot(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Icosphere
+      parentName: robot(Clone)
+      position: {x: -0, y: 2.368382, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 12.081367, y: 12.081367, z: 12.081367}
+    - name: NurbsPath
+      parentName: robot(Clone)
+      position: {x: 0.9457004, y: 3.927386, z: -0.14863756}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 45.724644, y: 45.724644, z: 45.724644}
+    - name: NurbsPath.001
+      parentName: robot(Clone)
+      position: {x: -7.3876625e-17, y: 3.0401225, z: 0.56515265}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Plane.001
+      parentName: robot(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Plane.004
+      parentName: robot(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
