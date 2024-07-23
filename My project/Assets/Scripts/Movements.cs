@@ -15,7 +15,7 @@ public class PlayerInput : MonoBehaviour
     
     
     [SerializeField] private float speed = 5f;
-    [SerializeField] private float rotationalSpeed = 50f;
+    [SerializeField] private float rotationalSpeed = 150f;
     [SerializeField] private float jumpHeight = 5f;
 
     private Vector2 direction = Vector2.zero;
@@ -38,6 +38,7 @@ public class PlayerInput : MonoBehaviour
     void Update()
     {
         Move(direction.x, direction.y);
+        Rotate();
     }
 
     private void Move(float x, float z)
@@ -70,11 +71,11 @@ public class PlayerInput : MonoBehaviour
     
     void OnRotate(InputValue value)
     {
-        //Debug.Log("Current rotation is " + value.Get<float>())
+        Debug.Log("Current rotation is " + value.Get<float>());
     }
     void Rotate()
     {
-        //transform.rotation(Vector3.up * Time.deltaTime * rotationalSpeed * direction.x);
+        transform.Rotate(Vector3.up * Time.deltaTime * rotationalSpeed * direction.x);
         
     }
 
