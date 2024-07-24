@@ -7,16 +7,19 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
-public class PlayerInput : MonoBehaviour
+public class Movements: MonoBehaviour
 {
     private Rigidbody rb;
+    private Animator animator;
     private bool IsGrounded=false;
 	private bool BouncePad = false;
+    private bool isMoving;
+    private bool isRunning;
     
     
     [SerializeField] private float speed = 5f;
-    [SerializeField] private float rotationalSpeed = 150f;
     [SerializeField] private float jumpHeight = 5f;
+    [SerializeField] private float rotationFactorPerFrame = 1.0f;
 
     private Vector2 direction = Vector2.zero;
 
@@ -24,26 +27,45 @@ public class PlayerInput : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
         
     }
     
     void OnMove(InputValue value)
     {
         Vector2 direction = value.Get<Vector2>();
-        Debug.Log(direction);
+        if (direction != Vector2.zero)
+        {
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
+        }
         this.direction = direction;
 
     }
 
     void Update()
-    {
+    {   
+        handleRotation();
+        handleAnimation();
         Move(direction.x, direction.y);
-        Rotate();
+        
     }
 
     private void Move(float x, float z)
     {
         rb.velocity = new Vector3(x * speed, rb.velocity.y, z* speed);
+        
+    }
+
+    private void OnRun()
+    {
+        if (Input.GetKeyDown("Left Shift"))
+        {
+            isRunning = true;
+        }
         
     }
 
@@ -69,14 +91,35 @@ public class PlayerInput : MonoBehaviour
         
     }
     
-    void OnRotate(InputValue value)
+    void handleRotation()
     {
-        Debug.Log("Current rotation is " + value.Get<float>());
-    }
-    void Rotate()
-    {
-        transform.Rotate(Vector3.up * Time.deltaTime * rotationalSpeed * direction.x);
+        Vector3 positionToLookAt;
+        positionToLookAt.x = rb.velocity.x;
+        positionToLookAt.y = 0.0f;
+        positionToLookAt.z = rb.velocity.z;
+
+        Quaternion currentRotation =transform.rotation;
+        if (isMoving)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(positionToLookAt);
+            transform.rotation= Quaternion.Slerp(currentRotation, targetRotation, rotationFactorPerFrame*Time.deltaTime);
+        }
         
+    }
+    
+    void handleAnimation()
+    {
+        bool isWalking = animator.GetBool("isWalking");
+        //bool isRunning = animator.GetBool("isRunning");
+
+        if (isMoving && !isWalking)
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else if (!isMoving && isWalking)
+        {
+            animator.SetBool("isWalking", false);
+        }
     }
 
    
