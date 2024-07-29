@@ -11,6 +11,7 @@ public class AnimationAndMovementController : MonoBehaviour
     
     private int isWalkingHash;
     private int isRunningHash;
+    private int isJumpingHash;
     private float groundedGravity = -0.5f;
     private float  gravity = -9.8f; 
     private Vector2 currentmovementInput;
@@ -22,11 +23,14 @@ public class AnimationAndMovementController : MonoBehaviour
     
     private bool isJumpPressed =false;
     private bool isJumping = false;
+    private bool isJumpAnimating = false;
     private float initialJumpVelocity;
-    private float maxJumpHeight = 100.0f;
-    private float maxJumpTime = 40.0f;
-    
+    private float maxJumpHeight = 4.0f;
+    private float maxJumpTime = 1.0f;
     private float runMultiplier = 5.0f;
+    private float bouncePadMultiplier = 1.2f;
+    
+    private bool BouncePad = false;
 
     void Awake()
     {
@@ -36,6 +40,7 @@ public class AnimationAndMovementController : MonoBehaviour
         
         isWalkingHash = Animator.StringToHash("isWalking");
         isRunningHash = Animator.StringToHash("isRunning");
+        isJumpingHash = Animator.StringToHash("isJumping");
 
         playerInput.Player.Move.started += OnMovementInput;
         playerInput.Player.Move.canceled += OnMovementInput;
@@ -51,6 +56,7 @@ public class AnimationAndMovementController : MonoBehaviour
 
     void setUpJumpVariables()
     {
+        
         float timeToApex = maxJumpTime / 2;
         gravity = (-2 * maxJumpHeight) / Mathf.Pow(timeToApex, 2);
         initialJumpVelocity = (2 * maxJumpHeight) / timeToApex;
@@ -58,20 +64,32 @@ public class AnimationAndMovementController : MonoBehaviour
 
     void handleJump()
     {
+        
         if (!isJumping && characterController.isGrounded && isJumpPressed)
         {
+            animator.SetBool(isJumpingHash, true);
+            isJumpAnimating = true;
             isJumping = true;
-            currentMovement.y =initialJumpVelocity;
-            currentRunMovement.y =initialJumpVelocity;
+            if (BouncePad)
+            {
+                currentMovement.y = initialJumpVelocity * bouncePadMultiplier;
+                currentRunMovement.y = initialJumpVelocity * bouncePadMultiplier;
+            }
+            else
+            {
+                currentMovement.y = initialJumpVelocity * 0.5f;
+                currentRunMovement.y = initialJumpVelocity * 0.5f;
+            }
+            
         }else if (!isJumpPressed && isJumping && characterController.isGrounded)
         {
             isJumping = false;
         }
+        
     }
     void OnJump(InputAction.CallbackContext context)
     {
         isJumpPressed = context.ReadValueAsButton();
-        Debug.Log(context.ReadValueAsButton());
     }
 
     void OnMovementInput(InputAction.CallbackContext context)
@@ -136,16 +154,33 @@ public class AnimationAndMovementController : MonoBehaviour
 
     void handleGravity()
     {
+        bool isFalling = currentMovement.y <= 0.00f;
+        float fallMultiplier = 2.0f;
         if (characterController.isGrounded)
         {
+            if (isJumpAnimating)
+            {
+                 animator.SetBool(isJumpingHash, false);
+                 isJumpAnimating = false;
+            }
             currentMovement.y = groundedGravity;
             currentRunMovement.y = groundedGravity;
             
+        }else if (isFalling)
+        {
+            float previousYVelocity = currentMovement.y;
+            float newYVelocity = currentMovement.y + (gravity * fallMultiplier * Time.deltaTime);
+            float nextYVelocity = (previousYVelocity + newYVelocity) * 0.5f;
+            currentMovement.y = nextYVelocity;
+            currentRunMovement.y = nextYVelocity;
         }
         else
         {
-            currentMovement.y += gravity;
-            currentRunMovement.y = gravity;
+            float previousYVelocity = currentMovement.y;
+            float newYVelocity = currentMovement.y + (gravity * Time.deltaTime);
+            float nextYVelocity = (previousYVelocity + newYVelocity) * 0.5f;
+            currentMovement.y = nextYVelocity;
+            currentRunMovement.y = nextYVelocity;
         }
     }
 
@@ -197,4 +232,27 @@ public class AnimationAndMovementController : MonoBehaviour
     {
         playerInput.Player.Disable();
     }
+    
+    void OnTriggerEnter(Collider other)
+    {
+        switch (other.gameObject.tag)
+        {
+            case "JumpPad":
+                BouncePad = true;
+                Debug.Log(BouncePad);
+                break;
+        }
+     
+    }
+    
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("JumpPad"))
+        {
+            BouncePad = false;
+            Debug.Log(BouncePad);
+        }
+    }
+
+    
 }
