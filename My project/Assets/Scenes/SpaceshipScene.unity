@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -311,8 +312,6 @@ GameObject:
   - component: {fileID: 663493629}
   - component: {fileID: 663493633}
   - component: {fileID: 663493636}
-  - component: {fileID: 663493635}
-  - component: {fileID: 663493634}
   - component: {fileID: 663493637}
   - component: {fileID: 663493639}
   - component: {fileID: 663493638}
@@ -354,7 +353,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 66
     y: 70
-    width: 111
+    width: 113.33333
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -365,8 +364,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 663493633}
   - {fileID: 663493636}
-  - {fileID: 663493635}
-  - {fileID: 663493634}
   - {fileID: 663493637}
   - {fileID: 663493639}
   - {fileID: 663493638}
@@ -384,7 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 434, y: 13.5}
+  scrollPos: {x: 730.6667, y: 402.83334}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -439,63 +436,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: 'Greetings, dear Jupiteriam. '
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &663493634
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663493627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 6
-  indentLevel: 0
-  storyText: 'However, your work on earth is done. We need your help here on Jupiterm,
-    and we need it now. '
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &663493635
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663493627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 5
-  indentLevel: 0
-  storyText: I've heard of all your accomplishments during your time on earth, and
-    we, your fellow Jupiteriams, are so proud of you.
+  storyText: Greetings. If you are receiving this message, it means that you have
+    inherited the legacy of a planet that was once vibrant and full of life.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -522,7 +464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: 'You must be our newest recruit for Project Return: Planet Orbit Mission. '
+  storyText: 'This is an urgent message to activate the Project Return: Planet Orbit
+    Mission. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -577,7 +520,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  storyText: Now, are you ready? Yeah? Alright, let's go!
+  storyText: 'Survive. Thrive. Remember us.
+
+
+    {wi} With urgency and hope, {w=0.5}The
+    Keeper of Earth'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -604,9 +551,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: 'We need your help in finding the 3 magical potions that will help the
-    planet orbit again! They''re scattered around the planet, and all you have to
-    do is obtain them! '
+  storyText: "Remember our past, learn from it, and continue to seek understanding.
+    Your actions now carry the weight of an entire planet\u2019s history."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -619,79 +565,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!1001 &947875731
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 7.2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 7.2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 7.2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -11.6
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 33
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10.8
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.12903683
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.99163985
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 165.172
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
-      propertyPath: m_Name
-      value: base
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 85789fcbfcb204ffeb7712619664f7f1, type: 3}
 --- !u!1 &997776949
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,4 +819,3 @@ SceneRoots:
   - {fileID: 1834207348}
   - {fileID: 663493632}
   - {fileID: 70636012}
-  - {fileID: 947875731}
