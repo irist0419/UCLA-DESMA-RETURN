@@ -27,7 +27,7 @@ public class AnimationAndMovementController : MonoBehaviour
     private float initialJumpVelocity;
     private float maxJumpHeight = 4.0f;
     private float maxJumpTime = 1.0f;
-    private float runMultiplier = 5.0f;
+    private float runMultiplier = 3.0f;
     private float bouncePadMultiplier = 1.2f;
     
     private bool BouncePad = false;
