@@ -315,6 +315,7 @@ GameObject:
   - component: {fileID: 663493637}
   - component: {fileID: 663493639}
   - component: {fileID: 663493638}
+  - component: {fileID: 663493640}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -367,6 +368,7 @@ MonoBehaviour:
   - {fileID: 663493637}
   - {fileID: 663493639}
   - {fileID: 663493638}
+  - {fileID: 663493640}
   suppressAllAutoSelections: 0
 --- !u!114 &663493631
 MonoBehaviour:
@@ -381,7 +383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 730.6667, y: 402.83334}
+  scrollPos: {x: 262.6667, y: 41.833344}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -395,7 +397,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 663493630}
   selectedCommands:
-  - {fileID: 663493638}
+  - {fileID: 663493640}
   variables: []
   description: 
   stepPause: 0
@@ -565,6 +567,25 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &663493640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663493627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: lvlprototype
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!1 &997776949
 GameObject:
   m_ObjectHideFlags: 0
