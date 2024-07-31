@@ -241,6 +241,7 @@ public class AnimationAndMovementController : MonoBehaviour
                 BouncePad = true;
                 Debug.Log(BouncePad);
                 break;
+                
         }
      
     }

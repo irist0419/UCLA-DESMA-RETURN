@@ -8,8 +8,10 @@ using UnityEngine;
 public class NPCcontrol : MonoBehaviour
 {
     [SerializeField] private string chatName;
+    [SerializeField] private GameObject VCam;
 
     private bool canTalk = false;
+
 
     void Start()
     {
@@ -24,6 +26,8 @@ public class NPCcontrol : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         canTalk = false;
+        VCam.SetActive(true);
+        
     }
 
 
